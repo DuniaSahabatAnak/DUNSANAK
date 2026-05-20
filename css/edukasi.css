@@ -2681,3 +2681,297 @@ a {
 ::-webkit-scrollbar-thumb:hover {
     background: var(--color-text-muted)
 }
+
+/* Responsive Edukasi Mobile */
+@media (max-width: 768px) {
+    :root {
+        --navbar-height: auto;
+    }
+
+    body {
+        overflow-x: hidden;
+        padding-bottom: 86px;
+    }
+
+    .dashboard-layout {
+        display: block;
+        min-height: 100vh;
+    }
+
+    .dashboard-content {
+        margin-left: 0;
+        width: 100%;
+        min-height: 100vh;
+    }
+
+    .dashboard-main {
+        padding: 1rem;
+        padding-bottom: 7rem;
+    }
+
+    /* Sidebar tetap terlihat sebagai bottom navigation */
+    .sidebar {
+        width: 100%;
+        height: 76px;
+        min-height: 76px;
+        position: fixed;
+        top: auto;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 9999;
+        overflow: visible;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        border-right: 0;
+        border-top: 3px solid var(--color-navy);
+        transform: none !important;
+        padding: 0.35rem 0.5rem;
+    }
+
+    .sidebar__logo,
+    .sidebar__footer,
+    .sidebar__nav > div:first-child {
+        display: none !important;
+    }
+
+    .sidebar__nav {
+        width: 100%;
+        flex: none;
+        display: grid !important;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0.35rem !important;
+        padding: 0 !important;
+    }
+
+    .sidebar__link {
+        min-width: 0;
+        height: 58px;
+        padding: 0.35rem 0.25rem !important;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.2rem !important;
+        border-radius: 10px !important;
+        text-align: center;
+        transform: none !important;
+    }
+
+    .sidebar__link svg {
+        width: 20px;
+        height: 20px;
+        min-width: 20px !important;
+    }
+
+    .sidebar__link span {
+        max-width: 100%;
+        font-size: 0.62rem !important;
+        line-height: 1.05;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .sidebar__link--active {
+        box-shadow: 2px 2px 0px var(--color-navy) !important;
+    }
+
+    /* Navbar mobile */
+    .navbar {
+        position: sticky;
+        top: 0;
+        height: auto;
+        min-height: auto;
+        padding: 0.85rem 1rem !important;
+        flex-direction: column;
+        align-items: stretch !important;
+        gap: 0.75rem;
+    }
+
+    .navbar > div:first-child {
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch !important;
+        gap: 0.6rem !important;
+    }
+
+    .navbar > div:first-child > div:first-child {
+        width: 100% !important;
+    }
+
+    .navbar__actions {
+        width: 100%;
+        justify-content: space-between;
+        gap: 0.6rem !important;
+        flex-wrap: wrap;
+    }
+
+    .navbar__actions > div:first-child {
+        width: 100%;
+        padding-right: 0 !important;
+        border-right: 0 !important;
+        justify-content: space-between;
+        gap: 0.5rem !important;
+        flex-wrap: wrap;
+    }
+
+    .navbar__actions > div:first-child > div:first-child {
+        flex: 1 1 140px;
+    }
+
+    .navbar__actions > div:first-child > div:first-child > div,
+    .navbar__actions > div:first-child > div:first-child > div > div {
+        width: 100% !important;
+    }
+
+    .navbar__actions > div:last-child {
+        width: 100%;
+        padding-left: 0 !important;
+        border-left: 0 !important;
+        justify-content: flex-end;
+    }
+
+    .navbar__avatar {
+        width: 40px !important;
+        height: 40px !important;
+        font-size: 0.95rem !important;
+    }
+
+    /* Header Edukasi */
+    .dashboard-main > div > div:first-child {
+        align-items: flex-start !important;
+        gap: 1rem !important;
+        margin-bottom: 1.5rem !important;
+    }
+
+    .dashboard-main > div > div:first-child > div:first-child {
+        width: 56px !important;
+        height: 56px !important;
+        min-width: 56px !important;
+    }
+
+    .dashboard-main > div > div:first-child svg {
+        width: 30px;
+        height: 30px;
+    }
+
+    .dashboard-main h1 {
+        font-size: 1.75rem !important;
+        line-height: 1.15;
+    }
+
+    .dashboard-main h2 {
+        font-size: 1.25rem !important;
+        margin-bottom: 1rem !important;
+    }
+
+    .dashboard-main h3 {
+        font-size: 1.1rem !important;
+        line-height: 1.25;
+    }
+
+    .dashboard-main p {
+        font-size: 0.9rem !important;
+        line-height: 1.5;
+    }
+
+    /* Grid modul */
+    .stagger-children {
+        grid-template-columns: 1fr !important;
+        gap: 1rem !important;
+    }
+
+    .card-brutal {
+        box-shadow: 4px 4px 0px var(--card-shadow-color, var(--color-navy)) !important;
+    }
+
+    .card-brutal:hover {
+        transform: none;
+    }
+
+    .card-brutal > div:first-child {
+        padding: 0.85rem 1rem !important;
+    }
+
+    .card-brutal > div:last-child {
+        padding: 1rem !important;
+    }
+
+    .badge-brutal {
+        font-size: 0.65rem !important;
+        padding: 0.2rem 0.45rem !important;
+        box-shadow: 2px 2px 0px var(--color-navy);
+    }
+
+    .card-brutal span {
+        line-height: 1.2;
+    }
+
+    .card-brutal [style*="justify-content:space-between"] {
+        gap: 0.75rem;
+    }
+}
+
+@media (max-width: 420px) {
+    .dashboard-main {
+        padding: 0.75rem;
+        padding-bottom: 7rem;
+    }
+
+    .sidebar {
+        height: 70px;
+        min-height: 70px;
+    }
+
+    .sidebar__link {
+        height: 54px;
+    }
+
+    .sidebar__link span {
+        font-size: 0.56rem !important;
+    }
+
+    .sidebar__link svg {
+        width: 18px;
+        height: 18px;
+    }
+
+    .navbar {
+        padding: 0.75rem !important;
+    }
+
+    .dashboard-main h1 {
+        font-size: 1.5rem !important;
+    }
+
+    .dashboard-main h2 {
+        font-size: 1.15rem !important;
+    }
+
+    .dashboard-main > div > div:first-child > div:first-child {
+        width: 50px !important;
+        height: 50px !important;
+        min-width: 50px !important;
+    }
+
+    .card-brutal > div:first-child {
+        padding: 0.75rem !important;
+    }
+
+    .card-brutal > div:last-child {
+        padding: 0.9rem !important;
+    }
+
+    .card-brutal h3 {
+        font-size: 1rem !important;
+    }
+
+    .card-brutal p {
+        font-size: 0.82rem !important;
+    }
+
+    .card-brutal [style*="padding-top:1rem"] {
+        flex-wrap: wrap;
+        align-items: flex-start !important;
+    }
+}

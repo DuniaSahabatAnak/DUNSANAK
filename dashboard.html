@@ -80,7 +80,7 @@
                                 </svg>
                             </button>
                         </a>
-                        <a href="#"">
+                        <a href="#">
                             <button class="btn-brutal" style="width:48px;height:48px;padding:0;border-radius:50%;background:var(--color-white);border:3px solid var(--color-navy);box-shadow:3px 3px 0px var(--color-lime);display:flex;align-items:center;justify-content:center">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--color-navy)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-settings" aria-hidden="true">
                                     <path d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915"></path>
@@ -117,33 +117,28 @@
                                 <rect width="18" height="18" x="3" y="4" rx="2"></rect>
                                 <path d="M3 10h18"></path>
                             </svg>
-                            Minggu, 19 Mei 2026
+                            <span class="tanggal-hari-ini"></span>
                         </div>
                     </div>
                     <div class="navbar__actions" style="display:flex;align-items:center;gap:1.25rem">
                         <div style="display:flex;align-items:center;gap:0.75rem;padding-right:1.25rem;border-right:2px solid rgba(0,0,0,0.1)">
-                            <div style="display:flex;flex-direction:column;gap:0.25rem;padding:0.25rem 0.8rem;background:var(--color-bg);border:2px solid var(--color-navy);border-radius:var(--radius-brutal-sm);box-shadow:2px 2px 0px var(--color-navy)">
-                                <div style="display:flex;justify-content:space-between;align-items:center;width:120px">
-                                    <span style="font-size:0.65rem;font-weight:800;color:var(--color-text-muted)">LEVEL 7</span>
-                                    <span style="font-size:0.65rem;font-weight:800;color:var(--color-purple)">65%</span>
-                                </div>
-                                <div style="width:120px;height:6px;background:rgba(0,0,0,0.05);border-radius:100px;border:1px solid var(--color-navy);overflow:hidden">
-                                    <div style="width:65%;height:100%;background:var(--color-purple)"></div>
-                                </div>
-                            </div>
-                            <div style="background:var(--color-lime);color:var(--color-navy);padding:0.4rem 0.8rem;border-radius:var(--radius-brutal-sm);border:2px solid var(--color-navy);font-size:0.75rem;font-weight:800;display:flex;align-items:center;gap:0.4rem;box-shadow:2px 2px 0px var(--color-navy)">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star" aria-hidden="true">
-                                    <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-                                </svg>
-                                5
-                            </div>
-                            <div style="background:var(--color-orange);color:var(--color-white);padding:0.4rem 0.8rem;border-radius:var(--radius-brutal-sm);border:2px solid var(--color-navy);font-size:0.75rem;font-weight:800;display:flex;align-items:center;gap:0.4rem;box-shadow:2px 2px 0px var(--color-navy)">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-flame" aria-hidden="true">
-                                    <path d="M12 3q1 4 4 6.5t3 5.5a1 1 0 0 1-14 0 5 5 0 0 1 1-3 1 1 0 0 0 5 0c0-2-1.5-3-1.5-5q0-2 2.5-4"></path>
-                                </svg>
-                                5
-                            </div>
-                        </div>
+    <div style="background:var(--color-lime);color:var(--color-navy);padding:0.45rem 0.8rem;border-radius:var(--radius-brutal-sm);border:2px solid var(--color-navy);font-size:0.75rem;font-weight:800;display:flex;align-items:center;gap:0.4rem;box-shadow:2px 2px 0px var(--color-navy)">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
+            <path d="m9 12 2 2 4-4"></path>
+        </svg>
+        Sekolah Aman
+    </div>
+
+    <div style="background:var(--color-orange);color:var(--color-white);padding:0.45rem 0.8rem;border-radius:var(--radius-brutal-sm);border:2px solid var(--color-navy);font-size:0.75rem;font-weight:800;display:flex;align-items:center;gap:0.4rem;box-shadow:2px 2px 0px var(--color-navy)">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 8v4"></path>
+            <path d="M12 16h.01"></path>
+            <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
+        </svg>
+        Siaga Bullying
+    </div>
+</div>
                         <div style="display:flex;align-items:center;gap:0.75rem;border-left:2px solid var(--color-border-light);padding-left:1.25rem">
                             <div class="hidden lg:block" style="text-align:right;">
                                 <div style="font-size:0.875rem;font-weight:800;color:var(--color-navy)">Jevon A.</div>
@@ -158,18 +153,21 @@
                         <div style="margin-bottom:2rem;display:flex;flex-direction:column;gap:0.5rem">
                             <div style="display:flex;align-items:center;gap:0.5rem">
                                 <div class="badge-brutal badge-brutal--lime" style="display:inline-flex;align-items:center;gap:0.25rem;padding:0.3rem 0.75rem">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-flame" aria-hidden="true">
-                                        <path d="M12 3q1 4 4 6.5t3 5.5a1 1 0 0 1-14 0 5 5 0 0 1 1-3 1 1 0 0 0 5 0c0-2-1.5-3-1.5-5q0-2 2.5-4"></path>
-                                    </svg>
-                                    Level 12
-                                </div>
-                                <div class="badge-brutal badge-brutal--purple" style="display:inline-flex;align-items:center;gap:0.25rem;padding:0.3rem 0.75rem">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trending-up" aria-hidden="true">
-                                        <path d="M16 7h6v6"></path>
-                                        <path d="m22 7-8.5 8.5-5-5L2 17"></path>
-                                    </svg>
-                                    5 Laporan Dikirim
-                                </div>
+    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
+        <path d="m9 12 2 2 4-4"></path>
+    </svg>
+    Zona Aman
+</div>
+
+<div class="badge-brutal badge-brutal--purple" style="display:inline-flex;align-items:center;gap:0.25rem;padding:0.3rem 0.75rem">
+    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M17 6.1H3"></path>
+        <path d="M21 12.1H3"></path>
+        <path d="M15.1 18H3"></path>
+    </svg>
+    Aksi Peduli
+</div>
                             </div>
                             <h1 style="font-family:var(--font-heading);font-size:2.5rem;font-weight:800;margin-top:0.5rem;margin-bottom:0.25rem;color:var(--color-navy)">
                                 Halo, <span style="color:var(--color-purple)">Sahabat DUNSANAK!</span>
@@ -455,5 +453,23 @@ Yuk tingkatkan budaya saling menghargai dan berani melapor.”</p>
         <script>
             self.__next_f.push([1, "19:I[12843,[\"/_next/static/chunks/08yb0vyff6txf.js\",\"/_next/static/chunks/0nz2qlxv3r.27.js\"],\"IconMark\"]\n14:null\n18:[[\"$\",\"title\",\"0\",{\"children\":\"CEAMIS — Control Every Awful Money Impulse System\"}],[\"$\",\"meta\",\"1\",{\"name\":\"description\",\"content\":\"Ekosistem pencatatan keuangan Gen-Z berbasis AI, gamifikasi, \u0026 edukasi adaptif. Cerdas finansial, kontrol impuls, raih masa depan!\"}],[\"$\",\"meta\",\"2\",{\"name\":\"keywords\",\"content\":\"keuangan,Gen-Z,AI,gamifikasi,edukasi finansial,CEAMIS\"}],[\"$\",\"link\",\"3\",{\"rel\":\"icon\",\"href\":\"/favicon.ico?favicon.0x3dzn~oxb6tn.ico\",\"sizes\":\"256x256\",\"type\":\"image/x-icon\"}],[\"$\",\"$L19\",\"4\",{}]]\n"])
         </script>
+        <script>
+document.addEventListener("DOMContentLoaded", () => {
+    const tanggalEls = document.querySelectorAll(".tanggal-hari-ini");
+
+    const tanggalSekarang = new Date();
+
+    const formatTanggal = new Intl.DateTimeFormat("id-ID", {
+        weekday: "long",
+        day: "numeric",
+        month: "long",
+        year: "numeric"
+    }).format(tanggalSekarang);
+
+    tanggalEls.forEach((el) => {
+        el.textContent = formatTanggal;
+    });
+});
+</script>
     </body>
 </html>

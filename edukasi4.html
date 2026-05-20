@@ -27,13 +27,14 @@
         <div class="dashboard-layout ">
             <aside class="sidebar">
                 <div class="sidebar__logo" style="padding:2rem 1.5rem 1rem 1.5rem">
-                    <div style="width:52px;height:52px;background:var(--color-white);border-radius:var(--radius-brutal-sm);border:3px solid var(--color-navy);box-shadow:4px 4px 0px var(--color-white);display:flex;align-items:center;justify-content:center;font-family:var(--font-heading);font-weight:900;font-size:1.75rem;color:var(--color-navy);transform:rotate(-3deg)">
-                        <img style="width: 80%;" src="heroo.png" alt="">
-                    </div>
-                        <span style="font-size:1.5rem;font-weight:900;letter-spacing:2px;color:var(--color-white);line-height:1">DUNSANAK</span>
-                        <span style="font-size:0.6rem;font-weight:800;color:var(--color-lime);letter-spacing:1px;margin-top:0.25rem">Dunia Sahabat Anak</span>
-                    </div>
-                </div>
+    <div style="width:52px;height:52px;background:var(--color-white);border-radius:var(--radius-brutal-sm);border:3px solid var(--color-navy);box-shadow:4px 4px 0px var(--color-white);display:flex;align-items:center;justify-content:center;font-family:var(--font-heading);font-weight:900;font-size:1.75rem;color:var(--color-navy);transform:rotate(-3deg)">
+        <img style="width:80%;" src="heroo.png" alt="">
+    </div>
+    <div style="display:flex;flex-direction:column">
+        <span style="font-size:1.5rem;font-weight:900;letter-spacing:2px;color:var(--color-white);line-height:1">DUNSANAK</span>
+        <span style="font-size:0.6rem;font-weight:800;color:var(--color-lime);letter-spacing:1px;margin-top:0.25rem">Dunia Sahabat Anak</span>
+    </div>
+</div>
                 <nav class="sidebar__nav" style="padding:1rem 1rem;display:flex;flex-direction:column;gap:0.5rem">
                     <div style="font-size:0.7rem;font-weight:900;color:rgba(255,255,255,0.3);letter-spacing:2px;padding:0 1.25rem;margin-bottom:0.5rem">MENU UTAMA</div>
                     <a class="sidebar__link " style="background:transparent;color:rgba(255,255,255,0.7);border:2px solid transparent;box-shadow:none;padding:0.85rem 1.25rem;display:flex;align-items:center;gap:1rem;border-radius:var(--radius-brutal-sm);transition:all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);transform:none" href="dashboard.html">
@@ -119,33 +120,28 @@
                                 <rect width="18" height="18" x="3" y="4" rx="2"></rect>
                                 <path d="M3 10h18"></path>
                             </svg>
-                            Minggu, 19 Mei 2026
+                            <span class="tanggal-hari-ini"></span>
                         </div>
                     </div>
                     <div class="navbar__actions" style="display:flex;align-items:center;gap:1.25rem">
                         <div style="display:flex;align-items:center;gap:0.75rem;padding-right:1.25rem;border-right:2px solid rgba(0,0,0,0.1)">
-                            <div style="display:flex;flex-direction:column;gap:0.25rem;padding:0.25rem 0.8rem;background:var(--color-bg);border:2px solid var(--color-navy);border-radius:var(--radius-brutal-sm);box-shadow:2px 2px 0px var(--color-navy)">
-                                <div style="display:flex;justify-content:space-between;align-items:center;width:120px">
-                                    <span style="font-size:0.65rem;font-weight:800;color:var(--color-text-muted)">LEVEL 7</span>
-                                    <span style="font-size:0.65rem;font-weight:800;color:var(--color-purple)">65%</span>
-                                </div>
-                                <div style="width:120px;height:6px;background:rgba(0,0,0,0.05);border-radius:100px;border:1px solid var(--color-navy);overflow:hidden">
-                                    <div style="width:65%;height:100%;background:var(--color-purple)"></div>
-                                </div>
-                            </div>
-                            <div style="background:var(--color-lime);color:var(--color-navy);padding:0.4rem 0.8rem;border-radius:var(--radius-brutal-sm);border:2px solid var(--color-navy);font-size:0.75rem;font-weight:800;display:flex;align-items:center;gap:0.4rem;box-shadow:2px 2px 0px var(--color-navy)">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star" aria-hidden="true">
-                                    <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-                                </svg>
-                                5
-                            </div>
-                            <div style="background:var(--color-orange);color:var(--color-white);padding:0.4rem 0.8rem;border-radius:var(--radius-brutal-sm);border:2px solid var(--color-navy);font-size:0.75rem;font-weight:800;display:flex;align-items:center;gap:0.4rem;box-shadow:2px 2px 0px var(--color-navy)">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-flame" aria-hidden="true">
-                                    <path d="M12 3q1 4 4 6.5t3 5.5a1 1 0 0 1-14 0 5 5 0 0 1 1-3 1 1 0 0 0 5 0c0-2-1.5-3-1.5-5q0-2 2.5-4"></path>
-                                </svg>
-                                5
-                            </div>
-                        </div>
+    <div style="background:var(--color-lime);color:var(--color-navy);padding:0.45rem 0.8rem;border-radius:var(--radius-brutal-sm);border:2px solid var(--color-navy);font-size:0.75rem;font-weight:800;display:flex;align-items:center;gap:0.4rem;box-shadow:2px 2px 0px var(--color-navy)">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
+            <path d="m9 12 2 2 4-4"></path>
+        </svg>
+        Sekolah Aman
+    </div>
+
+    <div style="background:var(--color-orange);color:var(--color-white);padding:0.45rem 0.8rem;border-radius:var(--radius-brutal-sm);border:2px solid var(--color-navy);font-size:0.75rem;font-weight:800;display:flex;align-items:center;gap:0.4rem;box-shadow:2px 2px 0px var(--color-navy)">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 8v4"></path>
+            <path d="M12 16h.01"></path>
+            <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
+        </svg>
+        Siaga Bullying
+    </div>
+</div>
                         <div style="display:flex;align-items:center;gap:0.75rem;border-left:2px solid var(--color-border-light);padding-left:1.25rem">
                             <div class="hidden lg:block" style="text-align:right;">
                                 <div style="font-size:0.875rem;font-weight:800;color:var(--color-navy)">Jevon A.</div>
@@ -275,76 +271,61 @@
         </script>
         <script>
 document.addEventListener("DOMContentLoaded", () => {
-
-    // CARD CONTENT KANAN
-    const scrollContainer = document.querySelector(
-        '.card-brutal[style*="overflow-y:auto"]'
-    );
-
-    const sections = document.querySelectorAll("section[id]");
+    const scrollContainer = document.querySelector('.card-brutal[style*="overflow-y:auto"]');
+    const sections = Array.from(document.querySelectorAll("section[id]"));
     const items = document.querySelectorAll(".materi-item");
     const progressText = document.getElementById("reading-progress");
 
-    let completed = new Set();
+    if (!sections.length || !progressText) return;
 
-    const observer = new IntersectionObserver((entries) => {
+    const completed = new Set();
 
-        entries.forEach(entry => {
+    function getScrollParent() {
+        if (window.innerWidth <= 768 || !scrollContainer) {
+            return window;
+        }
 
-            if (entry.isIntersecting) {
+        return scrollContainer;
+    }
 
-                const id = entry.target.id;
+    function getProgressPercent() {
+        return Math.round((completed.size / sections.length) * 100);
+    }
 
-                completed.add(id);
+    function updateProgress() {
+        const scrollParent = getScrollParent();
 
-                items.forEach(item => {
+        sections.forEach((section) => {
+            const rect = section.getBoundingClientRect();
+            const triggerPoint = window.innerHeight * 0.55;
 
-                    if (item.dataset.target === id) {
-
-                        // warna hijau
-                        item.style.background = "#B6FF00";
-
-                        // icon checklist
-                        const icon = item.querySelector(".icon");
-
-                        if (icon) {
-
-                            icon.innerHTML = `
-                            <svg xmlns="http://www.w3.org/2000/svg"
-                                 width="16"
-                                 height="16"
-                                 viewBox="0 0 24 24"
-                                 fill="none"
-                                 stroke="currentColor"
-                                 stroke-width="3"
-                                 stroke-linecap="round"
-                                 stroke-linejoin="round">
-                                <path d="M20 6 9 17l-5-5"/>
-                            </svg>`;
-                        }
-                    }
-
-                });
-
-                // update progress
-                const percent = Math.round(
-                    (completed.size / sections.length) * 100
-                );
-
-                progressText.innerText = percent + "% Dibaca";
+            if (rect.top <= triggerPoint) {
+                completed.add(section.id);
             }
-
         });
 
-    }, {
-        root: scrollContainer,
-        threshold: 0.4
+        items.forEach((item) => {
+            if (completed.has(item.dataset.target)) {
+                item.style.background = "#B6FF00";
+            } else {
+                item.style.background = "var(--color-bg)";
+            }
+        });
+
+        progressText.innerText = getProgressPercent() + "% Dibaca";
+    }
+
+    progressText.innerText = "0% Dibaca";
+
+    items.forEach((item) => {
+        item.style.background = "var(--color-bg)";
     });
 
-    sections.forEach(section => {
-        observer.observe(section);
-    });
+    window.addEventListener("scroll", updateProgress, { passive: true });
 
+    if (scrollContainer) {
+        scrollContainer.addEventListener("scroll", updateProgress, { passive: true });
+    }
 });
 </script>
 
@@ -398,6 +379,24 @@ document.addEventListener("DOMContentLoaded", () => {
 
     });
 
+});
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const tanggalEls = document.querySelectorAll(".tanggal-hari-ini");
+
+    const tanggalSekarang = new Date();
+
+    const formatTanggal = new Intl.DateTimeFormat("id-ID", {
+        weekday: "long",
+        day: "numeric",
+        month: "long",
+        year: "numeric"
+    }).format(tanggalSekarang);
+
+    tanggalEls.forEach((el) => {
+        el.textContent = formatTanggal;
+    });
 });
 </script>
     </body>
